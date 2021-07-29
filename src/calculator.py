@@ -18,7 +18,7 @@ def perform_math () :
         run = False 
         print("Goodbye")
     else:
-        equation = re.sub('[a-zA-z,./:{}=)""(&^%$#@!><\'_`;]', '', equation) # leaving just numbers and operators
+        equation = re.sub('[a-zA-z,/:{}=)""(&^%$#@!><\'_`;]', '', equation) # leaving just numbers and operators
         
         if previous == 0:
             previous = eval(equation)
